@@ -96,7 +96,8 @@
     color: #FFFFFF;
     padding-left: 26px;
     position: relative;
-    &::before{
+
+    &::before {
       content: "";
       position: absolute;
       width: 16px;
@@ -106,6 +107,7 @@
       background-color: #FFCA42;
       border-radius: 50%;
     }
+
     span {
       display: block;
       @extend %inter-400;
@@ -116,7 +118,8 @@
       padding-top: 12px;
     }
   }
-  &__info-item + .top__info-item{
+
+  &__info-item+.top__info-item {
     margin-left: 60px;
   }
 }

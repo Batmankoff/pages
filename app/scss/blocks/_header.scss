@@ -1,0 +1,82 @@
+.header {
+  padding: 22px 0 21px;
+  background-color: $title;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 35px;
+  }
+}
+
+.social-list {
+  margin-right: auto;
+  display: flex;
+
+  &__item+.social-list__item {
+    margin-left: 10px;
+  }
+
+  &__item {
+    max-height: 45px;
+  }
+
+  &__link {
+    font-size: 0;
+    transition: all 0.3s;
+    &:hover{
+      path{
+        fill: $title;
+        stroke: #FFCA42;
+      }
+       g path {
+        fill: #fff;
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+.menu {
+  margin-right: 40px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    margin-left: 50px;
+  }
+
+  &__list-link {
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.17px;
+    color: #F6F8FC;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #FFCA42;
+    }
+  }
+
+  &__list-link--active {
+    color: #FFCA42;
+  }
+}
+
+.user-nav {
+  &__cart {
+    margin-right: 50px;
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    @extend %btn;
+  }
+}

@@ -1,0 +1,122 @@
+.top {
+  padding: 100px 0 100px;
+  background-color: $title;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 590px;
+  }
+
+  &__suptitle {
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    @extend %cardo-400;
+    padding-left: 49px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 2px;
+      left: 0;
+      top: 18px;
+      background-color: #FFCA42;
+    }
+  }
+
+  &__title {
+    @extend %cardo-400;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 1.3px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__text {
+    @extend %inter-400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #B4C7E7;
+    margin-bottom: 42px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 47px;
+  }
+
+  &__link-btn {
+    @extend %btn;
+    margin-right: 50px;
+  }
+
+  &__link {
+    @extend %cardo-400;
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.38px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-bottom: 1px;
+    padding-right: 9px;
+    border-bottom: 1px solid #fff;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #FFCA42;
+      border-bottom: 1px solid #FFCA42;
+    }
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__info-item {
+    @extend %cardo-400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.48px;
+    color: #FFFFFF;
+    padding-left: 26px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 4px;
+      background-color: #FFCA42;
+      border-radius: 50%;
+    }
+    span {
+      display: block;
+      @extend %inter-400;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27px;
+      color: #B4C7E7;
+      padding-top: 12px;
+    }
+  }
+  &__info-item + .top__info-item{
+    margin-left: 60px;
+  }
+}

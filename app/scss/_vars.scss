@@ -25,8 +25,8 @@ $bg: #1B3764;
   padding: 18px 52px 19px;
   background-color: #FFCA42;
   border: 2px solid #FFCA42;
+  display: inline-block;
   transition: all 0.3s;
-
   &:hover {
     background-color: $title;
     color: #fff;

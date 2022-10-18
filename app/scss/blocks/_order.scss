@@ -1,0 +1,43 @@
+.order {
+  padding: 70px 0;
+  background-color: $title;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__conntent {
+    max-width: 539px;
+  }
+
+  &__conntent-title {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 27px;
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  &__conntent-text {
+    line-height: 28px;
+    color: #B4C7E7;
+    margin-bottom: 27px;
+  }
+
+  &__conntent-link {
+    @extend %btn;
+    background-color: $title;
+    color: #fff;
+
+    &:hover {
+      background-color: #FFCA42;
+      color: $title;
+    }
+  }
+
+
+}

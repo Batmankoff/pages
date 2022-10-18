@@ -1,0 +1,36 @@
+.descriptions {
+  padding: 126px 0;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    min-width: 297px;
+    text-align: center;
+  }
+
+  &__item-img {
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
+
+  &__item-company {
+    @extend %cardo-400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1B3764;
+    margin-bottom: 19px;
+  }
+
+  &__item-text {
+    line-height: 28px;
+    color: #969AA0;
+  }
+}

@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -11,8 +12,9 @@
 @import 'blocks/_top';
 @import 'blocks/_books';
 @import 'blocks/_author';
+@import 'blocks/_descriptions';
 @import 'blocks/_order';
-@import 'blocks/_trening';
+@import 'blocks/_training';
 @import 'blocks/_info';
 @import 'blocks/_reviews';
 @import 'blocks/_articles';

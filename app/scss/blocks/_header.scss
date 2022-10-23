@@ -28,12 +28,14 @@
   &__link {
     font-size: 0;
     transition: all 0.3s;
-    &:hover{
-      path{
+
+    &:hover {
+      path {
         fill: $title;
         stroke: #FFCA42;
       }
-       g path {
+
+      g path {
         fill: #fff;
         stroke: #fff;
       }
@@ -43,6 +45,11 @@
 
 .menu {
   margin-right: 40px;
+
+  &__btn {
+    display: none;
+  }
+
 
   &__list {
     display: flex;
@@ -78,5 +85,134 @@
   &__link {
     display: inline-block;
     @extend %btn;
+  }
+}
+
+
+@media (max-width: 1085px) {
+  .header {
+    &__logo {
+      margin-right: 25px;
+    }
+  }
+
+
+  .menu {
+    &__list-item+.menu__list-item {
+      margin-left: 25px;
+    }
+  }
+
+  .user-nav {
+    &__cart {
+      margin-right: 25px;
+    }
+  }
+
+
+}
+
+@media (max-width: 980px) {
+  .menu {
+    order: 1;
+    margin-right: 0;
+    margin-left: 15px;
+
+    &__list {
+      transform: translateY(-250%);
+      position: absolute;
+      top: 112px;
+      width: 100%;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      z-index: 5;
+      transition: all 0.3s;
+      background-color: #1b3764;
+
+      &.menu__list--active {
+        transform: translateY(0%);
+        transition: all 0.3s;
+      }
+    }
+
+    &__list-item {
+      padding-bottom: 10px;
+    }
+
+    &__list-item+.menu__list-item {
+      margin-left: 0;
+
+    }
+
+    &__btn {
+      display: none;
+      width: 43px;
+      height: 25px;
+      padding: 0;
+      border: none;
+      display: flex;
+      background-color: transparent;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #141414;
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background-color: #141414;
+        width: 100%;
+      }
+
+      &::after {
+        top: 0;
+      }
+
+      &::before {
+        bottom: 0;
+      }
+    }
+  }
+
+  .social-list {
+    order: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .social-list {
+    display: none;
+  }
+
+  .user-nav {
+    margin-left: auto;
+
+    &__cart {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .user-nav {
+    &__link {
+
+      display: none;
+    }
+  }
+
+  .menu {
+    &__list {
+      top: 78px;
+    }
   }
 }

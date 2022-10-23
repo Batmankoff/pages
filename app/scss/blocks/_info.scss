@@ -65,7 +65,8 @@
       margin-left: 10px;
     }
   }
-  &__item-desc + .info__item-desc{
+
+  &__item-desc+.info__item-desc {
     margin-left: 45px;
   }
 
@@ -113,6 +114,59 @@
 
     &:hover {
       border-bottom: 1px solid #FFCA42;
+    }
+  }
+
+}
+
+@media (max-width: 1085px) {
+  .info {
+    &__item {
+      padding: 25px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .info {
+    &__item-box {
+      flex-direction: column;
+    }
+
+    &__item-desc+.info__item-desc {
+      margin-left: 0;
+    }
+  }
+
+
+}
+
+@media (max-width: 720px) {
+  .info {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .info {
+    &__link {
+      padding: 21px 50px 20px;
+
+    }
+  }
+
+}
+
+@media (max-width: 390px) {
+  .info {
+    &__link {
+      padding: 21px 25px 20px;
+      font-size: 17px;
+      line-height: 24px;
+
     }
   }
 

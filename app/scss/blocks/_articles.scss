@@ -76,3 +76,35 @@
   }
 
 }
+
+@media (max-width: 1290px) {
+  .articles {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 7200px) {
+  .articles {
+    padding: 110px 0 120px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .articles {
+    &__item-info {
+      flex-direction: column;
+    }
+
+    &__link {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -70,3 +70,36 @@
     }
   }
 }
+
+@media (max-width: 1085px) {
+  .subscribe {
+    &__form {
+
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+
+  }
+
+}
+
+@media (max-width: 1048px) {
+  .subscribe {
+    &__form-input {
+      margin-left: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 420px) {
+  .subscribe {
+
+    &__form-btn {
+      padding: 18px 80px 18px;
+    }
+  }
+
+}

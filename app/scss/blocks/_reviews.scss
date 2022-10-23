@@ -98,13 +98,65 @@
 }
 
 
-
-
-
-
-
-
-
 .star.jq-ry-container {
   padding: 0;
+}
+
+
+@media (max-width: 1290px) {
+  .reviews {
+    &__items {
+      height: auto;
+    }
+
+    &__item {
+      padding: 20px;
+      max-width: 320px;
+    }
+  }
+
+}
+
+@media (max-width: 1290px) {
+  .reviews {
+    &__items {
+      flex-direction: row;
+      gap: 10px;
+
+    }
+
+    &__item {
+
+      max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .reviews {
+    padding: 100px 0 110px;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__content {
+      margin-bottom: 20px;
+      max-width: none;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+
+  .reviews {
+    &__item-citation {
+      font-size: 18px;
+      line-height: 24px;
+
+    }
+  }
+
+
 }

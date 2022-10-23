@@ -115,3 +115,28 @@
     }
   }
 }
+
+
+
+@media (max-width: 1048px) {
+  .footer-top {
+    flex-wrap: wrap;
+
+    &__item {
+      margin-bottom: 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-top {
+    margin-bottom: 30px;
+
+    &__contacts {
+      flex-direction: column;
+
+    }
+  }
+
+}

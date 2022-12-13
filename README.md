@@ -6,4 +6,4 @@
   <li>rateYo</li>
 </ul>
 <br>
-<p>Github pages:<a hred='https://batmankoff.github.io/pages/dist/index.html'>link</a></p>  
+<p>Github pages: <a href='https://batmankoff.github.io/pages/dist/index.html'>link</a></p>  
